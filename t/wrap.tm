@@ -31,6 +31,8 @@ sub dirwrap
 	} elsif (defined $c) {
 		$child->close();
 		while(<$parent>) {};
+	} else {
+		die "could not fork: $!";
 	}
 	exit(0);
 }
