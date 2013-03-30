@@ -5,3 +5,9 @@ README
 lib/File/Flock.pm
 t/flock.t
 META.yml                                 Module meta-data (added by MakeMaker)
+lib/File/Flock/Forking.pm
+lib/File/Flock/Subprocess.pm
+t/flock.tt
+t/forking.t
+t/subprocess.t
+t/wrap.tm
