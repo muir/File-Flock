@@ -7,8 +7,6 @@ use strict;
 use warnings;
 use Time::HiRes;
 
-use File::Temp qw(tempdir);
-
 our $dir;  # set in wrap.tm
 die unless $dir;
 

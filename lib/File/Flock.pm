@@ -14,7 +14,7 @@ use Data::Structure::Util qw(unbless);
 use vars qw($VERSION $debug $av0debug);
 
 BEGIN	{
-	$VERSION = 2013.03;
+	$VERSION = 2013.04;
 	$debug = 0;
 	$av0debug = 0;
 }
@@ -345,6 +345,16 @@ B<lock_rename()> is used to tell File::Flock when a file has been
 renamed (and thus the internal locking data that is stored based
 on the filename should be moved to a new name).  B<unlock()> the
 new name rather than the original name.
+
+Locks are released on process exit even if the process has fork()ed.
+Use POSIX::_exit() to prevent that behavior.
+
+=head1 SEE ALSO
+
+See L<File::Flock::Subprocess> for a variant that uses a subproess to hold
+the locks so that the locks survive when the parent process forks.
+See L<File::Flock::Forking> for a way to automatically choose between
+File::Flock and L<File::Flock::Subprocess>.
 
 =head1 LICENSE
 

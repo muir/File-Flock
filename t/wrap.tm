@@ -28,7 +28,7 @@ sub dirwrap
 		$parent->close();
 		$code->();
 		$child->close();
-	} elsif (defined $c) {
+	} elsif (defined $pid) {
 		$child->close();
 		while(<$parent>) {};
 	} else {
