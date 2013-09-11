@@ -1,3 +1,6 @@
+
+Resolve un-initialized variable isues in Forking.pm
+
 + 2013/04/17 version 2013.08
 
 Removed "my $_" instances that broke older perls.
