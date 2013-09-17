@@ -1,5 +1,9 @@
 Revision history for Perl module File::Flock
 
+2013.10 2013-09-16
+
+    - Switched from CHANGELOG to Changes
+
 2013.09 2013-09-11
 
     - Resolve un-initialized variable $ready in Subprocess.pm
