@@ -16,6 +16,6 @@ clean:;
 distcheck:;
 	./Build distcheck
 
-Build:;
+build:;
 	perl Build.PL
 
