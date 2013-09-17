@@ -34,17 +34,3 @@ my $build = Module::Build->new
 
 $build->create_build_script;
 
-package MY;
-
-sub postamble {
-    <<"END_OF_POSTAMBLE";
-
-pm_to_blib: README
-
-README: lib/File/Flock.pm
-\tCOLUMNS=80 pod2text lib/File/Flock.pm >README
-
-END_OF_POSTAMBLE
-}
-
-

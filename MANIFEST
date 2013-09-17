@@ -1,5 +1,5 @@
 Build.PL
-CHANGELOG
+Changes
 lib/File/Flock.pm
 lib/File/Flock/Forking.pm
 lib/File/Flock/Subprocess.pm
@@ -18,3 +18,5 @@ t/forking2.t
 t/subprocess.t
 t/subprocess2.t
 t/wrap.tm
+META.yml
+Makefile.PL
