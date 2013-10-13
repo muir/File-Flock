@@ -1,4 +1,3 @@
-
 package File::Flock;
 
 require Exporter;
@@ -49,7 +48,7 @@ sub lock_flock
 	my $created = 0;
 	my $previous = exists $locks{$file};
 
-	# the file may be springing in and out of existance...
+	# the file may be springing in and out of existence...
 	OPEN:
 	for(;;) {
 		if (-e $file) {
@@ -375,7 +374,7 @@ Use forget_locks() or POSIX::_exit() to prevent unlocking on process exit.
 
 =head1 SEE ALSO
 
-See L<File::Flock::Subprocess> for a variant that uses a subproess to hold
+See L<File::Flock::Subprocess> for a variant that uses a subprocess to hold
 the locks so that the locks survive when the parent process forks.
 See L<File::Flock::Forking> for a way to automatically choose between
 File::Flock and L<File::Flock::Subprocess>.
