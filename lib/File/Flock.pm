@@ -13,7 +13,7 @@ use Data::Structure::Util qw(unbless);
 use vars qw($VERSION $debug $av0debug);
 
 BEGIN	{
-	$VERSION = 2013.12;
+	$VERSION = 2014.01;
 	$debug = 0;
 	$av0debug = 0;
 }
